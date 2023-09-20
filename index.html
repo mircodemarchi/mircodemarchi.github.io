@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mirco De Marchi - PhD Student</title>
+    <title>Mirco De Marchi PhD Student</title>
     <!-- Add Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Mirco De Marchi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav  ml-auto">
+        <div class="collapse navbar-collapse justify-content-start mx-2" id="navbarNav">
+            <ul class="nav navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#publication">Publications</a>
                 </li>
@@ -27,6 +24,10 @@
                 </li>
             </ul>
         </div>
+        <button class="navbar-toggler ms-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"></a>
     </nav>
 
     <!-- Header Section -->
@@ -34,77 +35,106 @@
         <div class="container">
             <img src="me.jpg" alt="Mirco De Marchi" class="img-fluid rounded-circle" style="max-width: 200px;">
             <h1 class="display-4">Mirco De Marchi</h1>
-            <p class="lead">2nd year Ph.D. student in Computer Science</p>
-            <p>From: Verona, Italy</p>
+            <p class="lead">Ph.D. student in Computer Science</p>
+            <p>Verona, Italy</p>
+
+            <div class="col">
+                <a class="btn btn-default fa fa-2x fa-envelope" href="mailto:mirco@demarchi.dev" target="_blank"></a>
+                <a class="btn btn-default fa fa-2x fa-github" href="https://www.github.com/mircodemarchi" target="_blank"></a>
+                <a class="btn btn-default fa fa-2x fa-skype" href="live:mircodemarchi_1" target="_blank"></a>
+                <a class="btn btn-default fa fa-2x fa-linkedin" href="https://www.linkedin.com/in/mirco-de-marchi-03677a184/" target="_blank"></a>
+                <a class="btn btn-default fa fa-2x fa-book" href="https://orcid.org/0000-0003-2731-2816" target="_blank"></a>
+                
+            </div>
         </div>
     </header>
-
-    <!-- Header Section -->
-    <!-- <header class="jumbotron text-center">
-        <div class="container">
-            <img src="placeholder.jpg" alt="Mirco De Marchi" class="img-fluid rounded-circle" style="max-width: 200px;">
-            <h1 class="display-4">Mirco De Marchi</h1>
-            <p class="lead">2nd year Ph.D. student in Computer Science</p>
-            <p>From: Verona, Italy</p>
-            <p>Phone Number: +39 331 9381162</p>
-            <p>Emails: <a href="mailto:mirco@demarchi.dev">mirco@demarchi.dev</a>, <a href="mailto:mirco.demarchi@univr.it">mirco.demarchi@univr.it</a></p>
-            <p>Github: <a href="https://www.github.com/mircodemarchi" target="_blank">www.github.com/mircodemarchi</a></p>
-            <p>Linkedin: <a href="https://www.linkedin.com/in/mirco-de-marchi-03677a184/" target="_blank">www.linkedin.com/in/mirco-de-marchi-03677a184</a></p>
-            <p>Skype: live:mircodemarchi_1</p>
-            <p>Telegram: @mircodemarchi</p>
-        </div>
-    </header> -->
 
     <!-- Main Content Section -->
     <div class="container mt-4">
         <section>
-            <h2>Biography</h2>
-            <p>Mirco De Marchi is a 2nd year Ph.D. student at the forefront of research in real-time sensor fusion and human pose estimation on energy-efficient edge devices. His activity takes place at the Department of Engineering for Innovation Medicine, University of Verona, in Parallel Computing laboratory with supervisor Prof. Nicola Bombieri. His work focuses on the integration of wearable IMU sensors and camera-based sensors to achieve accurate and real-time tracking of human movements on embedded and low-cost devices.</p>
+            <h2>About me</h2>
+            <p>Mirco De Marchi is a Ph.D. student at the forefront of research in real-time sensor fusion and human pose estimation on energy-efficient edge devices. His activity takes place at the Department of Engineering for Innovation Medicine, University of Verona, in Parallel Computing laboratory with supervisor Prof. Nicola Bombieri. His work focuses on the integration of wearable IMU sensors and camera-based sensors to achieve accurate and real-time tracking of human movements on embedded and low-cost devices.</p>
         </section>
 
         <section>
             <h2>Research Areas</h2>
-            <ul>
-                <li>IMU-Camera fusion</li>
-                <li>Telemedicine</li>
-                <li>Industrial safety</li>
-                <li>Optimization</li>
-            </ul>
+                
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        IMU-Camera fusion
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        In the field of human pose estimation, multi-person scenarios encounter several difficulties, especially in situations where remote monitoring, patient training, or tracking an operator near a machine necessitate the ability to distinguish the subject being monitored from others. However, when monitoring is carried out using wearable sensors, identification becomes inherent, and by integrating data from multiple sensor sources, the accuracy of recorded movements can be significantly enhanced. Therefore, a methodology is currently being developed to track and identify a specific human body within a multi-person motion capture system, employing wearable wireless IMU sensors. This designed method incorporates motion analysis, utilizing both geometric matching models and neural network-based models to achieve its objectives.
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Telemedicine
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The need for remote motion analysis to gather clinical data on patients' activities or to activate alarm systems is becoming increasingly urgent, particularly for elderly users or in remote and difficult-to-reach areas. In response to this need, a privacy-aware platform has been developed, which allows for 3D human pose estimation at the edge to effectively detect patient falls. Additionally, the platform enables the real-time transmission of clinically relevant data that can be accessed remotely. The project has been funded by the Veneto region and the mountain union of Asiago. Its primary objectives are to detect alarm states in elderly individuals and to enhance the analytical data for the rehabilitation of patients with Parkinson's disease or those recovering from a stroke.
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Industrial safety
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        With the imminent rise of Industry 4.0 and human-machine collaboration, human pose estimation systems are playing a crucial role in tasks such as pose forecasting, collision detection with machinery, and identifying operator danger zones in assembly lines. As a result, multi-camera human pose systems are becoming increasingly popular to tackle the occlusion problem and enhance human pose accuracy. To meet these demands, a robust multi-person, multi-view human pose tracking system has been developed, ensuring real-time performance on at-the-edge devices. This distributed system was successfully implemented and tested in a real-world scenario at the <a href="https://www.icelab.di.univr.it">I.C.E. laboratory</a>.
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Optimization
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Working with resource-constrained, low-cost, and low-energy devices, as well as distributed systems, necessitates the optimization of processes and communication between them. Notably, efforts have been made to optimize convolutional neural networks through pruning and quantization, reducing the computational load of the human pose estimation model. Domain adaptation of the estimated pose with teacher-student architecture at the edge using knowledge distillation and active learning. Additionally, a methodology has been proposed to automate the deployment of nodes in a cluster, enhancing the communication protocol with the ROS interface by utilizing zero-copy techniques. This approach aims to further optimize the overall performance of the system. 
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Publications -->
         <section  id="publication">
             <h2>Publications</h2>
 
-            <h4>Conference:</h4>
             <ul>
                 <li>
-                    Michele Boldo, Nicola Bombieri, Stefano Centomo, Mirco De Marchi, Florenc Demrozi, Graziano Pravadelli, Davide Quaglia, Cristian Turetta.
-                    <em>"Integrating wearable and camera based monitoring in the digital twin for safety assessment in the Industry 4.0 era"</em>,
-                    International Symposium On Leveraging Applications of Formal Methods, Verification and Validation (ISoLA), 2022.
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-19762-8_13-19762-8_13" target="_blank">Read More</a>
+                    <a class="text-dark" href="https://link.springer.com/chapter/10.1007/978-3-031-19762-8_13-19762-8_13" target="_blank">Integrating wearable and camera based monitoring in the digital twin for safety assessment in the Industry 4.0 era</a>
+                    <br><em>Michele Boldo, Nicola Bombieri, Stefano Centomo, Mirco De Marchi, Florenc Demrozi, Graziano Pravadelli, Davide Quaglia, Cristian Turetta</em>
+                    <br>International Symposium On Leveraging Applications of Formal Methods, Verification and Validation (ISoLA), 2022
                 </li>
                 <li>
-                    Michele Boldo, Nicola Bombieri, Mirco De Marchi, Luca Geretti, Samuele Germiniani and Graziano Pravadelli.
-                    <em>"Risk Assessment and Prediction in Human-Robot Interaction Through Assertion Mining and Pose Estimation"</em>,
-                    IEEE Latin American Test Symposium (LATS), 2022.
-                    <a href="https://ieeexplore.ieee.org/document/9936899" target="_blank">Read More</a>
+                    <a class="text-dark" href="https://ieeexplore.ieee.org/document/9936899" target="_blank">Risk Assessment and Prediction in Human-Robot Interaction Through Assertion Mining and Pose Estimation</a>
+                    <br><em>Michele Boldo, Nicola Bombieri, Mirco De Marchi, Luca Geretti, Samuele Germiniani and Graziano Pravadelli</em>
+                    <br>IEEE Latin American Test Symposium (LATS), 2022
                 </li>
                 <li>
-                    Boldo Michele, Martini Enrico, Aldegheri Stefano, De Marchi Mirco, Vale' Nicola, Filippetti Mirko, Smania Nicola, Bertucco Matteo, Picelli Alessandro, Bombieri Nicola.
-                    <em>"Real-time Human Pose Estimation at the Edge for Gait Analysis at a Distance"</em>,
-                    International Conference on Distributed Computing in Smart Systems (DCOSS), 2022.
-                    <a href="https://ieeexplore.ieee.org/document/9881695" target="_blank">Read More</a>
+                    <a class="text-dark" href="https://ieeexplore.ieee.org/document/9881695" target="_blank">Real-time Human Pose Estimation at the Edge for Gait Analysis at a Distance</a>
+                    <br><em>Boldo Michele, Martini Enrico, Aldegheri Stefano, De Marchi Mirco, Vale' Nicola, Filippetti Mirko, Smania Nicola, Bertucco Matteo, Picelli Alessandro, Bombieri Nicola</em>
+                    <br>International Conference on Distributed Computing in Smart Systems (DCOSS), 2022
                 </li>
-            </ul>
-
-            <h4>Journal:</h4>
-            <ul>
                 <li>
-                    De Marchi Mirco, Lumpp Francesco, Martini Enrico, Boldo Michele, Aldegheri Stefano, Bombieri Nicola.
-                    <em>"Efficient ROS-Compliant CPU-iGPU Communication on Embedded Platforms"</em>,
-                    Journal of Low Power Electronics and Applications (JLPEA), 2021.
-                    <a href="https://doi.org/10.3390/jlpea11020024" target="_blank">Read More</a>
+                    <a class="text-dark" href="https://doi.org/10.3390/jlpea11020024">Efficient ROS-Compliant CPU-iGPU Communication on Embedded Platforms</a>
+                    <br><em>De Marchi Mirco, Lumpp Francesco, Martini Enrico, Boldo Michele, Aldegheri Stefano, Bombieri Nicola</em>
+                    <br>Journal of Low Power Electronics and Applications (JLPEA), 2021
                 </li>
             </ul>
         </section>
@@ -113,22 +143,22 @@
             <h2>Education</h2>
             
             <div class="row">
-                <h6 class="col-7">Doctoral Program in Computer Science</h5>
-                <p class="col-2">University of Verona</p>
-                <p class="col text-right font-italic">February 2022 - Present</p>
+                <h6 class="col-6">Doctoral Program in Computer Science</h6>
+                <p class="col-4">University of Verona</p>
+                <p class="col-2 text-right font-italic">February 2022<br>Present</p>
             </div>
             <ul>
-                <li>Research focus: Human pose estimation in multi-person scenarios using wearable wireless IMU sensors to track and identify a specific human body among others for remote monitoring.</li>
-                <li>Developed a privacy-aware platform for remote motion analysis and fall detection for elderly users through 3D human pose estimation at the edge (funded by Veneto region and mountain union of Asiago).</li>
-                <li>Designed and tested a robust multi-person, multi-view human pose tracking system in real-world scenarios at the I.C.E. laboratory, offering real-time performance on edge devices.</li>
-                <li>Worked on CNN inference and communication optimization for resource-constrained, low-cost, and low-energy devices in distributed systems.</li>
-                <li>Implemented real-time domain adaptation of a human pose estimation model with teacher-student architecture at the edge using knowledge distillation and active learning.</li>
+                <li>Human pose estimation in multi-person scenarios using wearable wireless IMU sensors to track and identify a specific human body among others for remote monitoring.</li>
+                <li>Development a privacy-aware platform for remote motion analysis and fall detection for elderly users through 3D human pose estimation at the edge (funded by Veneto region and mountain union of Asiago).</li>
+                <li>Design and test of a robust multi-person, multi-view human pose tracking system in real-world scenarios at the I.C.E. laboratory, offering real-time performance on edge devices.</li>
+                <li>CNN inference and communication optimization for resource-constrained, low-cost, and low-energy devices in distributed systems.</li>
+                <li>Real-time domain adaptation of a human pose estimation model with teacher-student architecture at the edge using knowledge distillation and active learning.</li>
             </ul>
 
             <div class="row">
-                <h6 class="col-7">Master's Degree in Computer Engineering for Robotics and Smart Industry</h5>
-                <p class="col-2">University of Verona</p>
-                <p class="col text-right font-italic">October 2019 - October 2021</p>
+                <h6 class="col-6">Master's Degree in Computer Engineering for Robotics and Smart Industry</h6>
+                <p class="col-4">University of Verona</p>
+                <p class="col-2 text-right font-italic">October 2019<br>October 2021</p>
             </div>
             <ul>
                 <li>Thesis: Inference of a CNN model exploiting CPU-iGPU communication on an embedded programmable device in a distributed network compliant with ROS (Supervisor: Nicola Bombieri).</li>
@@ -136,9 +166,9 @@
             </ul>
 
             <div class="row">
-                <h6 class="col-7">Bachelor's Degree in Computer Science</h5>
-                <p class="col-2">University of Verona</p>
-                <p class="col text-right font-italic">October 2016 - July 2019</p>
+                <h6 class="col-6">Bachelor's Degree in Computer Science</h6>
+                <p class="col-4">University of Verona</p>
+                <p class="col-2 text-right font-italic">October 2016<br>July 2019</p>
             </div>
             <ul>
                 <li>Thesis: The Linux Kernel from the Perspective of Memory Management (Supervisor: Graziano Pravadelli).</li>
@@ -151,58 +181,69 @@
             <h2>Experience</h2>
             
             <div class="row">
-                <h5 class="col-3">Tutorship grant</h5>
+                <h6 class="col-3">Tutorship grant</h6>
                 <p class="col-7">Programming, Advanced Computer Architecture, Operating System</p>
-                <p class="col text-right font-italic">2019-2023</p>
+                <p class="col text-right font-italic">2019 2023</p>
             </div>
 
             <div class="row">
-                <h5 class="col-3">Conference Presentation</h5>
+                <h6 class="col-3">Conference Presentation</h6>
                 <p class="col-7">IEEE Latin American Test Symposium (LATS)</p>
                 <p class="col text-right font-italic">2022</p>
             </div>
 
             <div class="row">
-                <h5 class="col-3">PUMPS+AI</h5>
+                <h6 class="col-3">PUMPS+AI</h6>
                 <p class="col-7">Summer school at Barcelona Supercomputing Center in AI on GPUs</p>
                 <p class="col text-right font-italic">2022</p>
             </div>
 
             <div class="row">
-                <h5 class="col-3">Research grant</h5>
+                <h6 class="col-3">Research grant</h6>
                 <p class="col-7">ROS library for shared-memory architectures</p>
-                <p class="col text-right font-italic">2021-2022</p>
+                <p class="col text-right font-italic">2021 2022</p>
             </div>
 
             <div class="row">
-                <h5 class="col-3">Internship</h5>
+                <h6 class="col-3">Internship</h6>
                 <p class="col-7">Optimization of Communication Protocols for Heterogeneous Edge Devices</p>
                 <p class="col text-right font-italic">2021</p>
             </div>
 
             <div class="row">
-                <h5 class="col-3">Research grant</h5>
+                <h6 class="col-3">Research grant</h6>
                 <p class="col-7">Optimization of a low-cost and low-energy embedded platform</p>
-                <p class="col text-right font-italic">2020-2021</p>
+                <p class="col text-right font-italic">2020 2021</p>
             </div>
 
             <div class="row">
-                <h5 class="col-3">Research grant</h5>
+                <h6 class="col-3">Research grant</h6>
                 <p class="col-7">Speech recognition models in smartphone for Restaurant Industry</p>
-                <p class="col text-right font-italic">2020-2021</p>
+                <p class="col text-right font-italic">2020 2021</p>
             </div>
 
             <div class="row">
-                <h5 class="col-3">Internship</h5>
+                <h6 class="col-3">Internship</h6>
                 <p class="col-7">MentOS: an educational Operating System for Memory Management</p>
-                <p class="col text-right font-italic">2018-2019</p>
+                <p class="col text-right font-italic">2018 2019</p>
             </div>
         </section>
     </div>
 
+    <div class="container mt-4 mb-4">
+        <div class="d-flex justify-content-center"><h3>🐒</h3></div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="bg-light">
+          © 2023 Copyright:
+          <a class="text-dark" href="https://demarchi.dev">demarchi.dev</a>
+        </div>
+    </footer>
+
     <!-- Add Bootstrap JS and Popper.js scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
